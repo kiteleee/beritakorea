@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^timthumb/(.*)/(.*)/(.*)$ /kitel/timthumb.php?src=$1&w=$2&h=$3 [L]
+RewriteCond $1 !^(index\.php|admin|images|timthumb\.php|test_email\.php)
+RewriteRule ^(.*)$ /kitel/index.php?$1 [L]
